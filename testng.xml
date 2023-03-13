@@ -5,12 +5,9 @@
             <class name="Userregister"/>
         </classes>
     </test>
-<<<<<<< HEAD
     <test name="Test" parallel="tests">
         <classes>
             <class name="LoginUser"/>
         </classes>
     </test>
-=======
->>>>>>> 3dfb8c0b062052ae9a7e780686c41167dda168bb
 </suite>
