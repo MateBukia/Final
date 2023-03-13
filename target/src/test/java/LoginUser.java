@@ -11,7 +11,6 @@ import static com.codeborne.selenide.Selenide.$;
 public class LoginUser extends Chromerunner {
     @Test
     public void myuser(){
-<<<<<<< HEAD
         Chromerunner obj = new Chromerunner();
 
         SelenideElement  email = $(By.name("email"),0),
@@ -32,14 +31,5 @@ public class LoginUser extends Chromerunner {
         Assert.assertEquals(password.getValue(), mypassword, "Password check");
         $(byText("Login")).click();
         Assert.assertTrue(logout.is(Condition.visible), "Login check");
-=======
-        SelenideElement home =  $(byText("Home"));
-        Assert.assertTrue(home.is(Condition.visible), "Home screen check");
-        $(byText("Signup / Login")).click();
-        Assert.assertTrue(newusersignup.is(Condition.visible),"New User Signup check");
-        $(By.name("name")).setValue(myname);
-        $(By.name("email"),0).setValue(myemail);
-
->>>>>>> 3dfb8c0b062052ae9a7e780686c41167dda168bb
     }
 }
